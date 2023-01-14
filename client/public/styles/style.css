@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+/* ====== VARIÁVEIS ====== */
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 3.9rem;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+}
+
+h5 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+p, body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+.body-small {
+  font-size: 1.6rem;
+}
+
+.body-large {
+  font: 2.2rem;
+}
+
+span, .caption {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.caption-small {
+  font-size: 1.4rem;
+}
+
+.caption-large {
+  font-size: 2rem;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+
+.button-small {
+  font-size: 1.6rem;
+}
+
+.button-large {
+  font-size: 2.2rem;
+}
+
+a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.link-small {
+  font-size: 1.7rem;
+}
+
+.link-large {
+  font-size: 2.3rem;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.label-small {
+  font-size: 1.3rem;
+}
+
+.label-large {
+  font-size: 1.9rem;
+}
+
+/* ====== BODY/HTML/ROOT ====== */
+:root {
+  font-size: 65%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #262626;
+  color: #fff;
+}
+
+/* ====== HEADER ====== */
+/* ====== MAIN ====== */
+main .form {
+  width: 50rem;
+  margin: 10rem auto;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  background-color: #1C1C1C;
+}
+main .form .ctr-modal {
+  transition: 0.7s all;
+  opacity: 100%;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  left: 0;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+}
+main .form .ctr-modal .modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #1C1C1C;
+  color: #fff;
+  box-shadow: 0 0 5px #fff;
+}
+main .form .ctr-modal .modal .ctr-notice {
+  width: 100%;
+}
+main .form .ctr-modal .modal .ctr-notice .notice {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+main .form .ctr-modal .modal .ctr-notice p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+main .form .ctr-modal .modal .close {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0;
+  padding: 0.5rem;
+}
+main .form .ctr-modal .modal .close:hover {
+  opacity: 80%;
+}
+main .form .ctr-modal.close {
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .form .ctr-modal.close button {
+  cursor: auto;
+}
+main .form .ctr-inputs {
+  width: 100%;
+}
+main .form .ctr-inputs .ctr-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+}
+main .form .ctr-inputs .ctr-input label {
+  color: #fff;
+}
+main .form .ctr-inputs .ctr-input input {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #1C1C1C;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #893FF1;
+}
+main .form .ctr-inputs .ctr-input textarea {
+  margin-top: 2rem;
+  height: 10rem;
+  border: 1px solid #893FF1;
+  padding: 1rem;
+  background-color: #1C1C1C;
+  color: #fff;
+  resize: none;
+}
+main .form .ctr-select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .form .ctr-select select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #262626;
+  color: #fff;
+  margin-top: 1rem;
+}
+main .form .ctr-progressBar {
+  width: 100%;
+  height: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #893FF1;
+  overflow: hidden;
+}
+main .form .ctr-progressBar .progress {
+  transition: 1s width;
+  width: 30%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #893FF1;
+}
+main .form .ctr-progressBar #success {
+  background-color: #00de0f !important;
+}
+main .form h1 {
+  color: #fff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+main .form button {
+  transition: 0.5s opacity;
+  color: #fff;
+  background-color: #5C0396;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+main .form button:hover {
+  cursor: pointer;
+  opacity: 8 0%;
+}
+
+/* ====== FOOTER ====== *//*# sourceMappingURL=style.css.map */
